@@ -1,4 +1,4 @@
-(echo 'y'; echo '1') | pacman -S linux linux-headers networkmanager sudo vi nano grub efibootmgr dosfstools mtools
+(echo 'y') | pacman -S linux linux-headers networkmanager sudo vi nano grub efibootmgr dosfstools mtools
 systemctl enable NetworkManager
 sleep 2
 mkinitcpio -p linux
