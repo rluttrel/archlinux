@@ -1,4 +1,4 @@
-yes | pacman -S linux linux-headers NetworkManager sudo vi namo grep efibootmgr dosfstools mtools
+pacman -S linux linux-headers networkmanager sudo vi nano grep efibootmgr dosfstools mtools
 systemctl enable NetworkManager
 sleep5
 mkinitcpio -p linux
