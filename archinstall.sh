@@ -6,7 +6,7 @@ sudo reflector --country "United States" --verbose --latest 50  --sort rate --sa
 sleep 10
 lsblk
 sleep 10
-(echo g; echo n; echo 1; echo ""; echo +500M; echo t; echo 1; echo n; echo 2; echo ""; echo +5G; echo n; echo 3; echo ""; echo ""; echo p; echo w | fdisk /dev/sda
+(echo g; echo n; echo 1; echo ""; echo +500M; echo t; echo 1; echo n; echo 2; echo ""; echo +5G; echo n; echo 3; echo ""; echo ""; echo p; echo w) | fdisk /dev/sda
 sleep 50
 mkfs.fat -F32 /dev/sda1
 mkfs.ext4 /dev/sda2
