@@ -23,3 +23,8 @@ sleep 20
 yes | pacstrap -i /mnt base
 arch-chroot /mnt
 yes | pacman -S linux linux-headers NetworkManager sudo grup efibootmgr dosfstools mtools
+systemctl enable NetworkManager
+sleep5
+mkinitcpio -p linux
+sed -i 's/#en_US./en_US/g' /etc/local.gen
+
