@@ -22,7 +22,7 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 cp archinstall2.sh /mnt
 sleep 5
 yes | pacstrap -i /mnt base
-arch-chroot /mnt
+(echo './archinstal2.sh') | arch-chroot /mnt
 yes | pacman -S linux linux-headers NetworkManager sudo vi namo grep efibootmgr dosfstools mtools
 systemctl enable NetworkManager
 sleep5
