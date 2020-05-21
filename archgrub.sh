@@ -22,7 +22,7 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 cp archinstall2.sh /mnt
 sleep 5
 yes | pacstrap -i /mnt base
-(echo './archinstall2.sh') | arch-chroot /mnt
+(echo './archgrub2.sh') | arch-chroot /mnt
 
 
 
