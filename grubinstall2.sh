@@ -1,4 +1,6 @@
 sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' /etc/pacman.conf
+sed -i 's/#NoProgressBar/Color = 5/g' /etc/pacman.conf
+sed -i 's/#VerbosePkgLists/ILoveCandy/g' /etc/pacman.conf
 ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 hwclock --systohc
 locale-gen
