@@ -17,7 +17,7 @@ sleep 1
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 sed -i 's/#% wheel/%wheel /g' /etc/sudoers
-useradd -m  -g users -G wheel rluttrel
+useradd -m -G wheel rluttrel
 echo "Change password for rluttrel and root"
 
 echo #this is the next part with xorg and window NetworkManager
