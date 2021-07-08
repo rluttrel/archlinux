@@ -19,10 +19,10 @@ sed -i 's/#% wheel/%wheel /g' /etc/sudoers
 useradd -m  -g users -G wheel rluttrel
 echo "Change password for rluttrel and root"
 
-#this is the next part with xorg and window NetworkManager
-#login as rluttrel
-#pacman -S base-devel git xf86-video-fbdev xorg xorg-init nitrogen picom firefox alacritty leftwm fish?
-#git clone https://aur.archlinux.org/yay-git
-#makepkg -si 
-#yay -S 
+echo #this is the next part with xorg and window NetworkManager
+echo #login as rluttrel
+echo #pacman -S base-devel git xf86-video-fbdev xorg xorg-init nitrogen picom firefox alacritty leftwm fish?
+echo #git clone https://aur.archlinux.org/yay-git
+echo #makepkg -si 
+echo #yay -S 
 
