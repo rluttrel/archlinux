@@ -1,3 +1,6 @@
+"color" >> ./etc/pacman.conf
+"ILoveCandy" >> ./etc/pacman.conf
+"ParallelDownloads = 5" >> ./etc/pacman.conf
 ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 hwclock --systohc
 locale-gen
