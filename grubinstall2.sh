@@ -1,9 +1,4 @@
-echo "Color" >> ./etc/pacman.conf
-sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5 Color ILoveCandy/g' /etc/pacman.conf
-
-
-echo "ILoveCandy" >> ./etc/pacman.conf
-echo "ParallelDownloads = 5" >> ./etc/pacman.conf
+sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' /etc/pacman.conf
 ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 hwclock --systohc
 locale-gen
