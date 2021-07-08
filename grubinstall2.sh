@@ -1,15 +1,14 @@
-"Color" >> ./etc/pacman.conf
-"ILoveCandy" >> ./etc/pacman.conf
-"ParallelDownloads = 5" >> ./etc/pacman.conf
+echo "Color" >> ./etc/pacman.conf
+echo "ILoveCandy" >> ./etc/pacman.conf
+echo "ParallelDownloads = 5" >> ./etc/pacman.conf
 ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 hwclock --systohc
 locale-gen
 sed -i 's/#en_US./en_US/g' /etc/locale.gen
-#need to put something in /etc/hostname
-#need to put something in /etc/hosts
-#127.0.0.1  localhost
-#::1        localhost
-#127.0.1.1  archkru2.localdomain archkru2
+echo "archkru2" >> /etc/hostname
+echo "127.0.0.1  localhost" >> /etc/hosts
+echo "::1        localhost" >> /etc/hosts
+echo "127.0.1.1  archkru2.localdomain archkru2" >> /etc/hosts
 (echo ""; echo "") | pacman -S linux linux-headers networkmanager sudo vi nano grub efibootmgr dosfstools mtools
 systemctl enable dhcpd
 systemctl enable NetworkManager
